@@ -4,4 +4,4 @@
 
 Tecnologías y Técnicas: HTML, CSS (BEM), JavaScript. El diseño es responsivo y utiliza la estructura BEM para la organización del CSS. La funcionalidad interactiva se maneja con JavaScript.
 
-Enlace a GitHub Pages:
+Enlace a GitHub Pages: https://gabymusicuba.github.io/web_project_around/
