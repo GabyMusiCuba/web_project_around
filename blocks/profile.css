@@ -13,10 +13,13 @@
 }
 
 .profile__info {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 165px 0 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-columns: auto auto;
+  column-gap: 1.8%;
   align-items: center;
+  width: 100%;
+  max-width: 415px;
 }
 
 .profile__title {
