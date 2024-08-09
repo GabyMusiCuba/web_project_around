@@ -1,0 +1,122 @@
+.profile {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 880px;
+  margin-bottom: 5%;
+}
+
+.profile__image {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 120px;
+}
+
+.profile__info {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 165px 0 30px;
+  align-items: center;
+}
+
+.profile__title {
+  margin: 0;
+}
+
+.profile__edit-button {
+  margin-left: 2.5%;
+  max-width: 24px;
+  max-height: 24px;
+  align-self: center;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.profile__edit-button:hover {
+  opacity: 50%;
+}
+
+.profile__add-button {
+  width: 150px;
+  height: 50px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  align-self: center;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.profile__add-button:hover {
+  opacity: 50%;
+}
+
+.profile__subtitle {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.78px;
+  margin: 1.6% 0 0;
+}
+
+@media screen and (max-width: 1146px) {
+  .profile {
+    justify-content: center;
+    max-width: 600px;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1146px) {
+  .profile__info {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 282px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .profile__info {
+    justify-content: center;
+    width: 288px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .profile__image {
+    margin-bottom: 26.25px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .profile__title {
+    margin-bottom: 14px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .profile__subtitle {
+    margin-bottom: 36px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .profile__add-button {
+    width: 100%;
+    width: 282px;
+    margin-bottom: 36px;
+  }
+}

@@ -1,0 +1,65 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 17px;
+  column-gap: 20px;
+  width: 880px;
+}
+.card {
+  background-color: #ffffff;
+  height: 361px;
+  width: 282px;
+  border-radius: 10px;
+}
+.card__image {
+  width: 100%;
+  max-width: 282px;
+  object-fit: cover;
+}
+.card__info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+}
+.card__title {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29.05px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card__icon:hover {
+  opacity: 50%;
+}
+
+.card__icon:active {
+  background-image: url(../images/black-heart.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  max-width: 24px;
+  max-height: 21px;
+  padding: 0px;
+  border: none;
+  background-color: #fff;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1146px) {
+  .cards {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 282px;
+  }
+}

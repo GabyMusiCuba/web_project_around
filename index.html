@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Gabriel Santana" />
+    <meta
+      name="description"
+      content="Explora y comparte fotos impresionantes de lugares alrededor de los Estados Unidos. Añade, elimina o da 'me gusta' a tus fotos favoritas en nuestra página interactiva."
+    />
+    <meta
+      name="keywords"
+      content="fotos, Estados Unidos, viajar, turismo, naturaleza, paisajes, interactivo, compartir, dar me gusta, añadir fotos, eliminar fotos"
+    />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <title>Around the U.S.</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="header">
+        <img
+          class="header__logo"
+          src="./images/logo.svg"
+          alt="Logotipo Around the U.S."
+        />
+        <div class="header__line"></div>
+      </div>
+      <section class="profile">
+        <img
+          class="profile__image"
+          src="./images/profile__image.svg"
+          alt="Imagen perfil de Jacques Costeau"
+        />
+        <div class="profile__info">
+          <h1 class="profile__title">Jacques Cousteau</h1>
+          <button class="profile__edit-button">
+            <img
+              src="./images/pencil-ico.svg"
+              alt="icono de lápiz"
+              class="profile__edit-ico"
+            />
+          </button>
+          <h2 class="profile__subtitle">Explorador</h2>
+        </div>
+        <button class="profile__add-button">
+          <img
+            src="./images/profile__add-button_ico.svg"
+            alt="icono del botón de añadir"
+          />
+        </button>
+      </section>
+      <main class="cards">
+        <div class="card">
+          <img
+            class="card__image"
+            src="./images/Valle_de_Yosemite.png"
+            alt="imagen del Valle de Yosemite"
+          />
+          <div class="card__info">
+            <p class="card__title">Valle de Yosemite</p>
+
+            <img
+              class="card__icon"
+              src="./images/card__icon.svg"
+              alt="icono de corazón"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card__image"
+            src="./images/Lago_Louise.png"
+            alt="imagen del lago Louise"
+          />
+          <div class="card__info">
+            <p class="card__title">Lago Louise</p>
+            <img
+              class="card__icon"
+              src="./images/card__icon.svg"
+              alt="icono de corazón"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card__image"
+            src="./images/Montañas_calvas.png"
+            alt="imagen de las Montañas calvas"
+          />
+          <div class="card__info">
+            <p class="card__title">Montañas Calvas</p>
+            <img
+              class="card__icon"
+              src="./images/card__icon.svg"
+              alt="icono de corazón"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card__image"
+            src="./images/Latemar.png"
+            alt="Paisaje de Latemar"
+          />
+          <div class="card__info">
+            <p class="card__title">Latemar</p>
+            <img
+              class="card__icon"
+              src="./images/card__icon.svg"
+              alt="icono de corazón"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card__image"
+            src="./images/Vanois_National.png"
+            alt=" imagen de Vanois National Park"
+          />
+          <div class="card__info">
+            <p class="card__title">Vanois National Park</p>
+            <img
+              class="card__icon"
+              src="./images/card__icon.svg"
+              alt="icono de corazón"
+            />
+          </div>
+        </div>
+        <div class="card">
+          <img
+            class="card__image"
+            src="./images/Lago_di_Braies.png"
+            alt="imagen del Lago di Braies"
+          />
+          <div class="card__info">
+            <p class="card__title">Lago di Braies</p>
+
+            <img
+              class="card__icon"
+              src="./images/card__icon.svg"
+              alt="icono de corazón"
+            />
+          </div>
+        </div>
+      </main>
+      <section class="popup">
+        <div class="popup__overlay">
+          <form class="popup__container">
+            <img
+              src="./images/Close-Icon.png"
+              alt="icono de cierre"
+              class="popup__close-button"
+            />
+            <fieldset class="popup__fieldset">
+              <label for="title" class="popup__title">Editar perfil</label>
+              <input
+                type="text"
+                placeholder="Nombre"
+                class="popup__input name__input"
+                id="title"
+                required
+              />
+              <div class="popup__line"></div>
+              <input
+                type="text"
+                placeholder="Acerca de mi"
+                class="popup__input job__input"
+                required
+              />
+              <div class="popup__line"></div>
+              <button type="submit" class="popup__submit-button">
+                Guardar
+              </button>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+      <footer class="footer">© 2021 Around The U.S.</footer>
+    </div>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
