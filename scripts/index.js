@@ -13,15 +13,14 @@ function handleProfileFormSubmit(evt) {
 
   profileTitle.textContent = nameInput.value;
   profileSubtitle.textContent = jobInput.value;
+  handleClose();
 }
 
 function handleOpen(evt) {
-  console.log(evt);
   popup.classList.add("popup_visible");
 }
 
 function handleClose(evt) {
-  console.log(evt);
   popup.classList.remove("popup_visible");
 }
 
